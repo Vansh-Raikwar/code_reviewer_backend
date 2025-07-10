@@ -6,4 +6,4 @@ app.listen(8080,()=>{
     console.log(`Server is running on port 8080 `);
 })
 
-app.use("https://code-reviewer-backend-chi.vercel.app/",aiRoutes);
+app.use("/ai",aiRoutes);
