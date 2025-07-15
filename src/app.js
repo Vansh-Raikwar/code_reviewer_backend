@@ -10,5 +10,5 @@ const limiter = rateLimit({
     message:"Too Many Request from This IP, Pleases try after some time"
 })
 app.use(limiter);
-app.use(cors());
+
 module.exports = app;
