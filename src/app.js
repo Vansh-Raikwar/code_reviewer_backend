@@ -14,6 +14,7 @@ app.use(cors({
   origin: "https://code-reviewer-frontend-zeta.vercel.app", // or your frontend domain
   credentials: true
 }));
+app.use(limiter);
 
 
 module.exports = app;
