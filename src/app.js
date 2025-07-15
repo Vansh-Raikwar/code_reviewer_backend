@@ -9,7 +9,11 @@ const limiter = rateLimit({
     max:15,
     message:"Too Many Request from This IP, Pleases try after some time"
 })
-app.use(cors());
+
+app.use(cors({
+  origin: "https://code-reviewer-frontend-iota.vercel.app", // or your frontend domain
+  credentials: true
+}));
 app.use(limiter);
 
 module.exports = app;
